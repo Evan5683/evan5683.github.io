@@ -1,0 +1,78 @@
+body {
+  background-image: url("../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* 在两边分布内容 */
+  align-items: center; /* 垂直居中对齐 */
+  padding: 20px; /* 添加一些内边距 */
+}
+
+.logo-container img {
+  height: 60px; /* 根据需要调整logo的高度 */
+  margin-left: 50px;
+  width: auto; /* 保持宽高比 */
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 确保文本在容器中垂直居中 */
+  align-items: flex-end; /* 右对齐文本 */
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.company-main {
+  font-size: 34px;
+  font-weight: 700;
+  color: #00bfff;
+}
+
+.company-sub {
+  font-size: 28px;
+  color: #808080;
+}
+
+.tagline-container {
+  position: fixed;
+  left: 50px; /* 距离左边界20像素 */
+  bottom: 20px; /* 距离底部边界20像素 */
+  width: auto; /* 自动宽度 */
+  z-index: 1000; /* 确保不被其他元素覆盖 */
+}
+
+.tagline1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #0056b3;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0); /* 轻微的背景色提升可读性 */
+  padding: 5px 10px; /* 适当的内边距 */
+  border-radius: 5px; /* 圆角边框 */
+}
+.tagline2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #0056b3;
+  background-color: rgba(255, 255, 255, 0); /* 轻微的背景色提升可读性 */
+  padding: 5px 10px; /* 适当的内边距 */
+  border-radius: 5px; /* 圆角边框 */
+}
+@media (max-width: 768px) {
+  .tagline-container {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    padding: 3px 7px;
+  }
+}
